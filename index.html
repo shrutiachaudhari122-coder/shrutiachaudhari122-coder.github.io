@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Before You Pollute</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================= -->
+    <!-- SECTION 1: OPENING SCREEN -->
+    <!-- ================================= -->
+
+    <section class="hero">
+
+        <div class="language-selector">
+         <select id="languageSelect">
+          <option value="en">🇬🇧 English</option>
+          <option value="hi">🇮🇳 हिन्दी</option>
+          <option value="mr">🇮🇳 मराठी</option>
+    </select>
+</div>
+
+        <div class="hero-content">
+
+            <p class="small-text">
+                A CHOICE. A CONSEQUENCE.
+            </p>
+
+
+            <h1>
+                BEFORE YOU<br>
+                POLLUTE
+            </h1>
+
+
+            <p class="tagline">
+                Every choice leaves a mark.
+            </p>
+
+
+            <button id="startButton">
+                START THE EXPERIENCE
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- SECTION 2: EMOTIONAL STORY -->
+    <!-- ================================= -->
+
+    <section class="story" id="story">
+
+        <p class="story-small">
+            THINK ABOUT THIS
+        </p>
+
+
+        <h2>
+            You threw something away.
+        </h2>
+
+
+        <p>
+            But where does "away" actually exist?
+        </p>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- SECTION 3: BOTTLE CHALLENGE -->
+    <!-- ================================= -->
+
+    <section class="bottle-section">
+
+        <div class="bottle-content">
+
+
+            <p class="story-small">
+                YOUR FIRST CHOICE
+            </p>
+
+
+            <h2>
+                You just finished a plastic bottle.
+            </h2>
+
+
+            <!-- Bottle -->
+            <div class="bottle">
+                🥤
+            </div>
+
+
+            <p class="question">
+                What will you do with it?
+            </p>
+
+
+
+            <!-- Choice Buttons -->
+
+            <div class="choices">
+
+
+                <button
+                    class="choice"
+                    data-points="10"
+                    data-result="wrong">
+
+                    🗑️ Throw it anywhere
+
+                </button>
+
+
+
+                <button
+                    class="choice"
+                    data-points="-5"
+                    data-result="good">
+
+                    ♻️ Put it in the correct bin
+
+                </button>
+
+
+
+                <button
+                    class="choice"
+                    data-points="-10"
+                    data-result="best">
+
+                    🔄 Reuse it
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- Result will appear here -->
+
+            <div id="result"></div>
+
+
+
+            <!-- Impact Score -->
+
+            <div class="score">
+
+                IMPACT SCORE:
+
+                <span id="score">
+                    0
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================= -->
+     <!-- ================================= -->
+<!-- SECTION 5: POLLUTION IMPACT -->
+<!-- ================================= -->
+
+<section class="impact-section" id="impact">
+
+    <div class="impact-content">
+
+        <p class="story-small">
+            LOOK CLOSER
+        </p>
+
+        <h2>
+            One small action can leave a big mark.
+        </h2>
+
+        <p class="impact-intro">
+            Pollution doesn't always look dangerous at first.
+            But its effects can spread far beyond what we see.
+        </p>
+
+
+        <div class="impact-scene">
+
+            <div class="sky">
+                ☁️
+                ☁️
+            </div>
+
+            <div class="city">
+                🏭 🏢 🏠
+            </div>
+
+            <div class="water">
+
+                <div class="fish">
+                    🐟
+                </div>
+
+                <div class="fish fish2">
+                    🐠
+                </div>
+
+                <div class="floating-bottle">
+                    🥤
+                </div>
+
+                <div class="waves">
+                    ~ ~ ~ ~ ~ ~ ~ ~
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="impact-message">
+            The things we throw away don't simply disappear.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- SECTION 6: THE OTHER SIDE -->
+<!-- ================================= -->
+
+<section class="other-side">
+
+    <div class="other-side-content">
+
+        <p class="story-small">
+            THE OTHER SIDE
+        </p>
+
+        <h2>
+            Pollution doesn't end<br>
+            where you leave it.
+        </h2>
+
+        <p class="other-intro">
+            What looks like a small action to us can become
+            a much bigger problem for the world around us.
+        </p>
+
+
+        <div class="impact-cards">
+
+
+            <!-- AIR -->
+
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    🌬️
+                </div>
+
+                <h3>
+                    AIR
+                </h3>
+
+                <p>
+                    Smoke and harmful gases can reduce air quality
+                    and affect living beings.
+                </p>
+
+                <span>
+                    BREATHE
+                </span>
+
+            </div>
+
+
+            <!-- WATER -->
+
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    💧
+                </div>
+
+                <h3>
+                    WATER
+                </h3>
+
+                <p>
+                    Waste that enters waterways can affect water
+                    quality and aquatic ecosystems.
+                </p>
+
+                <span>
+                    PROTECT
+                </span>
+
+            </div>
+
+
+            <!-- LAND -->
+
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    🌱
+                </div>
+
+                <h3>
+                    LAND
+                </h3>
+
+                <p>
+                    Improper waste disposal can damage soil and
+                    create unhealthy surroundings.
+                </p>
+
+                <span>
+                    CARE
+                </span>
+
+            </div>
+
+
+            <!-- LIFE -->
+
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    🐟
+                </div>
+
+                <h3>
+                    LIFE
+                </h3>
+
+                <p>
+                    Pollution can disturb plants, animals and
+                    the balance of ecosystems.
+                </p>
+
+                <span>
+                    RESPECT
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- SECTION 7: THE 5R CHALLENGE -->
+<!-- ================================= -->
+
+<section class="five-r-section">
+
+    <div class="five-r-content">
+
+        <p class="story-small">
+            CONTROL THE POLLUTION
+        </p>
+
+        <h2>
+            Think before you throw.
+        </h2>
+
+        <p class="five-r-intro">
+            The easiest waste to manage is the waste we never create.
+            Discover the 5R approach to responsible living.
+        </p>
+
+
+        <div class="five-r-grid">
+
+
+            <div class="r-card">
+                <div class="r-icon">🚫</div>
+                <h3>REFUSE</h3>
+                <p>Say no to things you don't really need.</p>
+                <span>STOP WASTE BEFORE IT STARTS</span>
+            </div>
+
+
+            <div class="r-card">
+                <div class="r-icon">📉</div>
+                <h3>REDUCE</h3>
+                <p>Use fewer resources and avoid unnecessary consumption.</p>
+                <span>USE LESS</span>
+            </div>
+
+
+            <div class="r-card">
+                <div class="r-icon">🔄</div>
+                <h3>REUSE</h3>
+                <p>Give products another life instead of throwing them away.</p>
+                <span>USE AGAIN</span>
+            </div>
+
+
+            <div class="r-card">
+                <div class="r-icon">🔧</div>
+                <h3>REPAIR</h3>
+                <p>Fix broken things instead of replacing them immediately.</p>
+                <span>FIX IT</span>
+            </div>
+
+
+            <div class="r-card">
+                <div class="r-icon">♻️</div>
+                <h3>RECYCLE</h3>
+                <p>Send suitable materials for recycling and proper processing.</p>
+                <span>GIVE MATERIALS A NEW LIFE</span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- WASTE TO NEW LIFE -->
+<!-- ================================= -->
+
+<section class="waste-life-section">
+
+    <div class="waste-life-header">
+
+        <p class="story-small">
+            DON'T THROW IT YET
+        </p>
+
+        <h2>
+            What if waste<br>
+            became something beautiful?
+        </h2>
+
+        <p>
+            Before something becomes waste, imagine what else it could become.
+        </p>
+
+    </div>
+
+
+    <div class="waste-showcase">
+
+        <!-- BANGLES -->
+
+        <div class="waste-item">
+
+            <div class="waste-object old-object">
+                💍
+            </div>
+
+            <div class="transform-arrow">
+                →
+            </div>
+
+            <div class="waste-object new-object">
+                🪴
+            </div>
+
+            <div class="waste-label">
+
+                <span>OLD BANGLES</span>
+
+                <strong>
+                    WALL DECOR
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTLE -->
+
+        <div class="waste-item">
+
+            <div class="waste-object old-object bottle-waste">
+                🧴
+            </div>
+
+            <div class="transform-arrow">
+                →
+            </div>
+
+            <div class="waste-object new-object">
+                🌸
+            </div>
+
+            <div class="waste-label">
+
+                <span>PLASTIC BOTTLE</span>
+
+                <strong>
+                    FLOWER POT
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- OLD CLOTHES -->
+
+        <div class="waste-item">
+
+            <div class="waste-object old-object">
+                👕
+            </div>
+
+            <div class="transform-arrow">
+                →
+            </div>
+
+            <div class="waste-object new-object">
+                👜
+            </div>
+
+            <div class="waste-label">
+
+                <span>OLD CLOTHES</span>
+
+                <strong>
+                    USEFUL BAG
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- JARS -->
+
+        <div class="waste-item">
+
+            <div class="waste-object old-object">
+                🫙
+            </div>
+
+            <div class="transform-arrow">
+                →
+            </div>
+
+            <div class="waste-object new-object">
+                🕯️
+            </div>
+
+            <div class="waste-label">
+
+                <span>GLASS JAR</span>
+
+                <strong>
+                    HOME DECOR
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="waste-message">
+
+        <span>WASTE</span>
+
+        <div class="message-line"></div>
+
+        <span>IMAGINATION</span>
+
+        <div class="message-line"></div>
+
+        <strong>
+            NEW LIFE
+        </strong>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- REAL WORLD ACTION -->
+<!-- ================================= -->
+
+<section class="real-world-section">
+
+    <div class="real-world-header">
+
+        <p class="story-small">
+            THIS IS ALREADY HAPPENING
+        </p>
+
+        <h2>
+            Don't just learn.<br>
+            See real change.
+        </h2>
+
+        <p>
+            There are people and organizations already giving waste
+            a second life. Discover them.
+        </p>
+
+    </div>
+
+
+    <div class="organization-grid">
+
+
+        <!-- BRC -->
+
+        <div class="organization-card">
+
+            <div class="org-number">
+                01
+            </div>
+
+            <div class="org-icon">
+                👕
+            </div>
+
+            <h3>
+                Bombay Recycling Concern
+            </h3>
+
+            <p>
+                Collects wearable clothes and helps give them
+                another life through reuse and responsible recycling.
+            </p>
+
+            <div class="org-actions">
+
+                <a
+                    href="https://www.gobrc.in/"
+                    target="_blank"
+                    rel="noopener">
+                    VISIT ORGANIZATION ↗
+                </a>
+
+                <a
+                    href="https://www.youtube.com/@bombayrecyclingconcern3449"
+                    target="_blank"
+                    rel="noopener">
+                    WATCH VIDEOS ▶
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- INDIA RECYCLES -->
+
+        <div class="organization-card">
+
+            <div class="org-number">
+                02
+            </div>
+
+            <div class="org-icon">
+                ♻️
+            </div>
+
+            <h3>
+                India Recycles
+            </h3>
+
+            <p>
+                Works with donated clothing and describes reuse,
+                resale and upcycling into useful products.
+            </p>
+
+            <div class="org-actions">
+
+                <a
+                    href="https://www.indiarecycles.org/"
+                    target="_blank"
+                    rel="noopener">
+                    EXPLORE ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ECOKAARI -->
+
+        <div class="organization-card">
+
+            <div class="org-number">
+                03
+            </div>
+
+            <div class="org-icon">
+                👜
+            </div>
+
+            <h3>
+                EcoKaari
+            </h3>
+
+            <p>
+                Shows how waste plastic can be transformed through
+                traditional craft and upcycling.
+            </p>
+
+            <div class="org-actions">
+
+                <a
+                    href="https://ecokaari.org/"
+                    target="_blank"
+                    rel="noopener">
+                    SEE THEIR WORK ↗
+                </a>
+
+                <a
+                    href="https://www.youtube.com/watch?v=KdG-y7TAaZE"
+                    target="_blank"
+                    rel="noopener">
+                    WATCH VIDEO ▶
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="real-world-bottom">
+
+        <span>
+            YOUR WASTE
+        </span>
+
+        <span>→</span>
+
+        <strong>
+            SOMEONE'S RAW MATERIAL
+        </strong>
+
+        <span>→</span>
+
+        <span>
+            A NEW PRODUCT
+        </span>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- SECTION 8: A NORMAL DAY -->
+<!-- ================================= -->
+
+<section class="day-section" id="normalDay">
+
+    <div class="day-content">
+
+        <p class="story-small">
+            A NORMAL DAY
+        </p>
+
+        <h2>
+            Your day. Your choices.
+        </h2>
+
+        <p class="day-intro">
+            Pollution control isn't only about big actions.
+            It begins with the small decisions we make every day.
+        </p>
+
+
+        <!-- QUESTION -->
+
+        <div class="day-card">
+
+            <p class="day-number" id="dayNumber">
+                CHOICE 1 OF 3
+            </p>
+
+            <h3 id="dayQuestion">
+                You're going to college.
+                How will you travel?
+            </h3>
+
+
+            <div class="day-choices">
+
+                <button class="day-choice" data-points="3">
+                    🚌 Public transport
+                </button>
+
+                <button class="day-choice" data-points="2">
+                    🚶 Walk / Cycle
+                </button>
+
+                <button class="day-choice" data-points="0">
+                    🚗 Travel alone by car
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SCORE -->
+
+        <div class="green-score">
+
+            GREEN SCORE
+
+            <span id="greenScore">
+                0
+            </span>
+
+        </div>
+
+
+        <p id="dayResult"></p>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- SECTION 9: FINAL IMPACT -->
+<!-- ================================= -->
+
+<section class="final-section" id="finalImpact">
+
+    <div class="final-content">
+
+        <p class="story-small">
+            YOUR IMPACT
+        </p>
+
+        <h2>
+            Your choices<br>
+            leave a mark.
+        </h2>
+
+        <div class="final-score">
+            <span id="finalScore">0</span>
+            <small>/ 9</small>
+        </div>
+
+        <h3 id="finalTitle">
+            The story isn't over.
+        </h3>
+
+        <p id="finalMessage">
+            Every day gives you another chance to make a better choice.
+        </p>
+
+        <button id="restartButton">
+            TRY AGAIN
+        </button>
+
+    </div>
+
+</section>
+   
+    <!-- ================================ -->
+<!-- SECTION 4: THE CONSEQUENCE -->
+<!-- ================================= -->
+
+<section class="consequence-section" id="consequence">
+
+    <div class="consequence-content">
+
+        <p class="story-small">
+            THE CONSEQUENCE
+        </p>
+
+        <h2 id="consequenceTitle">
+            Every choice leaves a path.
+        </h2>
+
+        <p id="consequenceText">
+            Your decision determines what happens next.
+        </p>
+
+
+        <!-- JOURNEY -->
+
+       <!-- JOURNEY -->
+
+<div class="journey">
+
+    <div class="journey-stage" id="street">
+        🏙️
+        <span>Street</span>
+    </div>
+
+    <div class="journey-line">
+        <div class="moving-bottle">🥤</div>
+    </div>
+
+    <div class="journey-stage" id="drain">
+        🚰
+        <span>Drain</span>
+    </div>
+
+    <div class="journey-line">
+        <div class="moving-bottle">🥤</div>
+    </div>
+
+    <div class="journey-stage" id="river">
+        🌊
+        <span>River</span>
+    </div>
+
+    <div class="journey-line">
+        <div class="moving-bottle">🥤</div>
+    </div>
+
+    <div class="journey-stage" id="ocean">
+        🌊
+        <span>Ocean</span>
+    </div>
+</div>
+
+        
+    
+        
+
+</section>
+ 
+ <!-- ============================= -->
+<!-- POLLUTION TYPES SECTION -->
+<!-- ============================= -->
+
+<section class="pollution-types">
+
+    <div class="section-title">
+        <p class="small-text">UNDERSTAND THE PROBLEM</p>
+        <h2>Types of Pollution</h2>
+        <p>Pollution affects our air, water, land and the world around us.</p>
+    </div>
+
+    <div class="pollution-container">
+
+        <div class="pollution-card">
+            <div class="pollution-icon">💨</div>
+            <h3>Air Pollution</h3>
+            <p>
+                Harmful gases, smoke and tiny particles released into
+                the atmosphere can affect people, animals and plants.
+            </p>
+            <span>Learn about Air Pollution →</span>
+        </div>
+
+        <div class="pollution-card">
+            <div class="pollution-icon">💧</div>
+            <h3>Water Pollution</h3>
+            <p>
+                Waste, chemicals and other pollutants can contaminate
+                rivers, lakes and oceans.
+            </p>
+            <span>Learn about Water Pollution →</span>
+        </div>
+
+        <div class="pollution-card">
+            <div class="pollution-icon">🌍</div>
+            <h3>Land Pollution</h3>
+            <p>
+                Improper waste disposal and harmful chemicals can damage
+                soil and natural ecosystems.
+            </p>
+            <span>Learn about Land Pollution →</span>
+        </div>
+
+        <div class="pollution-card">
+            <div class="pollution-icon">🔊</div>
+            <h3>Noise Pollution</h3>
+            <p>
+                Excessive and unwanted sound from traffic, machines and
+                other sources can disturb people and wildlife.
+            </p>
+            <span>Learn about Noise Pollution →</span>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- POLLUTION CONTROL / SOLUTIONS -->
+<!-- ================================= -->
+
+<section class="control-section" id="pollutionControl">
+
+    <div class="control-content">
+
+        <p class="story-small">
+            TAKE ACTION
+        </p>
+
+        <h2>
+            Pollution can be controlled.
+        </h2>
+
+        <p class="control-intro">
+            Every solution begins with a simple change in the way
+            we live, travel, consume and dispose of things.
+        </p>
+
+
+        <div class="control-grid">
+
+            <!-- AIR -->
+            <div class="control-card">
+
+                <div class="control-icon">🌬️</div>
+
+                <h3>CONTROL AIR POLLUTION</h3>
+
+                <p>
+                    Use public transport, walk or cycle when possible.
+                    Avoid unnecessary burning and maintain vehicles properly.
+                </p>
+
+                <div class="action">
+                    <span>YOUR ACTION</span>
+                    <strong>→ BREATHE CLEANER</strong>
+                </div>
+
+            </div>
+
+
+            <!-- WATER -->
+            <div class="control-card">
+
+                <div class="control-icon">💧</div>
+
+                <h3>PROTECT WATER</h3>
+
+                <p>
+                    Never throw plastic, chemicals or waste into rivers,
+                    lakes or drains. Use water responsibly.
+                </p>
+
+                <div class="action">
+                    <span>YOUR ACTION</span>
+                    <strong>→ KEEP WATER CLEAN</strong>
+                </div>
+
+            </div>
+
+
+            <!-- LAND -->
+            <div class="control-card">
+
+                <div class="control-icon">🌱</div>
+
+                <h3>PROTECT LAND</h3>
+
+                <p>
+                    Separate waste, compost organic materials and avoid
+                    dumping garbage in open spaces.
+                </p>
+
+                <div class="action">
+                    <span>YOUR ACTION</span>
+                    <strong>→ PROTECT THE SOIL</strong>
+                </div>
+
+            </div>
+
+
+            <!-- PLASTIC -->
+            <div class="control-card">
+
+                <div class="control-icon">♻️</div>
+
+                <h3>REDUCE PLASTIC</h3>
+
+                <p>
+                    Carry reusable bags and bottles and choose reusable
+                    products instead of unnecessary single-use plastic.
+                </p>
+
+                <div class="action">
+                    <span>YOUR ACTION</span>
+                    <strong>→ USE IT AGAIN</strong>
+                </div>
+
+            </div>
+
+
+            <!-- ENERGY -->
+            <div class="control-card">
+
+                <div class="control-icon">⚡</div>
+
+                <h3>SAVE ENERGY</h3>
+
+                <p>
+                    Switch off lights and devices when not needed.
+                    Choose efficient appliances and cleaner energy sources.
+                </p>
+
+                <div class="action">
+                    <span>YOUR ACTION</span>
+                    <strong>→ USE ENERGY WISELY</strong>
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNITY -->
+            <div class="control-card">
+
+                <div class="control-icon">🌍</div>
+
+                <h3>INSPIRE OTHERS</h3>
+
+                <p>
+                    Share environmental awareness with friends, family
+                    and your community. Small actions become stronger together.
+                </p>
+
+                <div class="action">
+                    <span>YOUR ACTION</span>
+                    <strong>→ CREATE CHANGE</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="control-ending">
+
+            <p>
+                The planet doesn't need a few people doing everything.
+            </p>
+
+            <h3>
+                It needs everyone doing something.
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- INTERACTIVE POLLUTION CHALLENGE -->
+<!-- ================================= -->
+
+<section class="challenge-section" id="challenge">
+
+    <div class="challenge-content">
+
+        <p class="story-small">YOUR CHOICE MATTERS</p>
+
+        <h2>
+            What would you do?
+        </h2>
+
+        <p class="challenge-intro">
+            Real pollution control begins with everyday decisions.
+            Choose what you would do in each situation.
+        </p>
+
+
+        <div class="challenge-box">
+
+            <p class="challenge-number" id="challengeNumber">
+                SITUATION 1 OF 3
+            </p>
+
+            <div class="challenge-icon" id="challengeIcon">
+                🛍️
+            </div>
+
+            <h3 id="challengeQuestion">
+                You're shopping and the shopkeeper offers you a
+                single-use plastic bag.
+            </h3>
+
+
+            <div class="challenge-options">
+
+                <button class="challenge-option" data-points="3">
+                    👜 Use a reusable bag
+                </button>
+
+                <button class="challenge-option" data-points="1">
+                    ♻️ Take the plastic bag and reuse it
+                </button>
+
+                <button class="challenge-option" data-points="0">
+                    🛍️ Take a new plastic bag
+                </button>
+
+            </div>
+
+            <p id="challengeResult"></p>
+
+        </div>
+
+
+        <div class="challenge-score">
+
+            ECO SCORE
+
+            <span id="challengeScore">
+                0
+            </span>
+
+            <small>/ 9</small>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+<!-- ================================= -->
+<!-- POLLUTION TO CLEAN TRANSFORMATION -->
+<!-- ================================= -->
+
+<section class="pollution-transform">
+
+    <div class="transform-content">
+
+        <p class="story-small">
+            ONE CHOICE CAN CHANGE EVERYTHING
+        </p>
+
+        <h2 class="transform-title">
+            FROM THIS...
+            <br>
+            TO THIS.
+        </h2>
+
+        <p class="transform-subtitle">
+            Pollution is created by choices.
+            A cleaner future can be created by them too.
+        </p>
+
+
+        <div class="transform-visual">
+
+            <div class="transform-side">
+
+                <div class="transform-icon">
+                    🏭
+                </div>
+
+                <span>THE CHOICE</span>
+
+                <strong>POLLUTION</strong>
+
+            </div>
+
+
+            <div class="transform-arrow-big">
+                →
+            </div>
+
+
+            <div class="transform-side">
+
+                <div class="transform-icon">
+                    🌳
+                </div>
+
+                <span>THE RESULT</span>
+
+                <strong>A CLEANER WORLD</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- FINAL MESSAGE -->
+<!-- ================================= -->
+
+<section class="final-cta">
+
+    <div class="final-cta-content">
+
+        <p class="story-small">
+            BEFORE YOU LEAVE
+        </p>
+
+        <h2>
+            The planet<br>
+            remembers.
+        </h2>
+
+        <p>
+            Every bottle thrown away.
+            Every piece of clothing wasted.
+            Every choice to pollute — or not to.
+        </p>
+
+        <a
+            href="#top"
+            class="final-cta-button"
+        >
+            START AGAIN ↑
+        </a>
+
+        <div class="final-signature">
+            SMALL CHOICES · BIG IMPACT
+        </div>
+
+    </div>
+
+</section>
+</body>
+
+</html>
